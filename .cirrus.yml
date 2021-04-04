@@ -5,7 +5,7 @@ env:
        
 task:
     name: recovery
-    timeout_in: 120m
+    timeout_in: 60m
     container:
       image: dazz111/ubuntu-sdk:build
       cpu: 7
