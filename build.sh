@@ -12,7 +12,7 @@ tg(){
 
 id=1033360588
 
-tmate -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}') && tg $id "Your Tmate XD" && tg $id "$send_shell"
+tmate -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}') && tg $id "Your cirrus XD" && tg $id "$send_shell"
 
 repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0 -g default,-device,-mips,-darwin,-notdefault 
 repo sync -j$(nproc --all)
